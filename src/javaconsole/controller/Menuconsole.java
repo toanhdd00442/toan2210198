@@ -44,8 +44,43 @@ public class Menuconsole {
                 System.err.println("Please enter a number");
                 continue;
             }
-            if(choice=5)
+            StudentController studentController =new StudentController();
+            if(choice==5){
+                break;
+                
+            }else{
+                
+                
+            switch (choice){
+                case 1 :
+                  
+                    studentController.getList();
+                    break;
+                case 2:
+                    studentController.editStudent();
+                    break;
+                    
+                case 3:
+                    studentController.editStudent();
+                    break;
+                case 4:
+                    studentController.deleteStudent();
+                    break;
+                default:
+                    System.out.println("Please enter number from 1 to 5.");
+                    break;
+                    
+            }
+            }
+                
+                
+                
+                
+                
+                
+                
             
         }
     }
 }
+
